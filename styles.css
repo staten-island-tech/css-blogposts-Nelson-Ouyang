@@ -4,28 +4,44 @@ body, html *{
     padding: 0;
     font-size: 10px;
     box-sizing: border-box;
+    text-align: center;
+    font-family: "Sometype Mono", monospace;
 }
 
 
 h1 {
     color: blue;
-    text-align: center;
     margin: 100px auto;
     width: 1000px;
-    padding: 50px;
+    padding: 100px;
     font-size: 100px;
 }
+#poop {
+    background-color: lightcyan;
+    border: 5px solid black;
+}
 
+.image-container {
+    border: 3px solid black;
+    align-items: center;
+    display: inline-block; /* Change to inline-block to fit content (fixed width, so doesnt extend out every side */
+    gap: 50px;
+    padding: 50px 50px;
+    background-color: lightblue; /* This will show the padded area */
+}
+.Whalen-question {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
 img {
     width: 300px;
-    container-type: center;
-    margin: auto;
-}
-
-.cat-img {
     height: 300px;
 }
 
-.whalen {
-    height: 300px;
+.questions {
+    border: 3px solid black;
+    align-items: center;
+    display: block; /* Change to inline-block to fit content (fixed width, so doesnt extend out every side */
+    padding: 50px 50px;
+    background-color: lightblue; /* This will show the padded area */
 }
