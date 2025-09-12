@@ -24,8 +24,9 @@ h1 {
 .image-container {
     border: 3px solid black;
     align-items: center;
-    display: inline-block; /* Change to inline-block to fit content (fixed width, so doesnt extend out every side */
+    display: inline-block; /* Change to inline-block to fit content (fixed width, so doesnt extend out every side Unlike display: block, which makes the div stretch to fill the parent’s width, inline-block makes the div only as wide as its content plus padding and border. This keeps the background color and border wrapped tightly around the content, not the whole page.*/
     gap: 50px;
+    width: 1450px;
     padding: 50px 50px;
     background-color: lightblue; /* This will show the padded area */
 }
@@ -38,10 +39,33 @@ img {
     height: 300px;
 }
 
+/*ps. padding wouldnt work w/ div as it just extends it but div literally takes up the whole left/right space */
+
 .questions {
+    
     border: 3px solid black;
     align-items: center;
-    display: block; /* Change to inline-block to fit content (fixed width, so doesnt extend out every side */
-    padding: 50px 50px;
+    display: block; /*Makes it BLOCK level element, so starts on new line, div stretches horizontal UNLESS width is set */
+    width: 1450px;
+    height: auto;
+    margin: 40px auto;
     background-color: lightblue; /* This will show the padded area */
+}
+#bleh{
+    font-size: 70px;
+    margin: 20px;
+}
+
+.question-list, .question-list li/*ok u basically cant just assign ul class and boom all li inside it inherit, u have to do both ul and li*/ {
+    font-size: 20px;
+    margin: 20px auto;
+}
+
+.possibilities-list, .possibilities-list li {
+    font-size: 20px;
+    margin: 20px auto;
+}
+
+.cat-href {
+    font-size: 30px;
 }
