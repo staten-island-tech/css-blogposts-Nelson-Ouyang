@@ -45,7 +45,7 @@ img {
 /*ps. padding wouldnt work w/ div as it just extends it but div literally takes up the whole left/right space */
 
 .questions {
-    
+    list-style-position: inside; /*they rlly put a whole thing for this*/
     border: 3px solid black;
     align-items: center;
     display: block; /*Makes it BLOCK level element, so starts on new line, div stretches horizontal UNLESS width is set */
@@ -71,4 +71,6 @@ img {
 
 .question-link {
     font-size: 30px;
+}.spacer {
+    margin-top: 20px;
 }
